@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\usepackage{color}
+\newcommand{\coloredsentence}[1][red]{\textcolor{#1}}
+\newenvironment{coloredtext}[1][red]{
+    \bgroup\color{#1}
+}{
+\egroup
+}
+
+\begin{document}
+
+This is a black text, \coloredsentence{but this is a red text}, \coloredsentence[blue]{You can also mark this as a blue text}.
+
+In order to mark lots of content as red and yellow, you can do the following:
+
+\begin{coloredtext}
+Red paragraph 1: blah blah blah
+
+Red paragraph 2: blah blah blah
+
+Red paragraph 3: blah blah blah
+
+Red paragraph 4: blah blah blah
+
+\end{coloredtext}
+
+and
+
+\begin{coloredtext}[yellow]
+Yellow paragraph 1: blah blah blah
+
+Yellow paragraph 2: blah blah blah
+
+Yellow paragraph 3: blah blah blah
+
+Yellow paragraph 4: blah blah blah
+\end{coloredtext}
+\end{document}
