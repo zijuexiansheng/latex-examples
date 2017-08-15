@@ -1,0 +1,95 @@
+\documentclass{beamer}
+
+\usetheme{Loon}
+
+\title[MEEV]{Minimum Enclosing Ellipse with Violations}
+\author[Shenglong Zhu]{
+	\texorpdfstring{
+		\begin{columns}[t]
+			\column{.4\textwidth}
+				\centering
+				Shenglong Zhu \\ 3100101158
+			\column{.55\textwidth} 
+				{Mentor: Prof. Guochuan Zhang}
+		\end{columns}
+	}
+	{loon}
+}
+\institute[cs at zju]{
+	College of Computer Science \& Technology \\
+			Zhejiang University}
+
+
+\begin{document}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\section*{}
+\begin{frame}
+	\frametitle{Outline}
+	\tableofcontents[section=1,hidesubsections]
+\end{frame}
+
+\AtBeginSection[]
+{
+	\begin{frame}<handout:0>
+		\frametitle{Outline}
+		\tableofcontents[currentsection, hideallsubsections]
+	\end{frame}
+}
+
+%\AtBeginSubsection[]
+%{
+%	\frame<handout:0>
+%	{
+%		\frametitle(Outline)
+%		\tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide]
+%	}
+%}
+
+\section{try 1}
+\begin{frame}
+\frametitle{Catchy Slide Title}
+Nested stuff for demonstration purposes:
+
+\begin{itemize}
+	\item<1-> Hey one two
+		\begin{itemize}
+			\item One.. one..
+				\begin{itemize}
+					\item One two
+				\end{itemize}
+			\item Say say
+				\begin{itemize}
+					\item say one two
+				\end{itemize}
+		\end{itemize}
+	\item<2-> One two
+	\item<3-> Like Gentoo
+		\begin{enumerate}
+			\item Come on
+			\item please
+			\item say now:
+		\end{enumerate}
+	\item<4-> One two
+\end{itemize}
+\end{frame}
+
+\section{try 2}
+\begin{frame}
+	\frametitle{try blocks}
+	\begin{block}{Normal block}
+		hehe ahaha
+	\end{block}
+	
+	\begin{example}
+		example example example
+	\end{example}
+
+	\begin{alertblock}{Loon Alertblock}
+		alert alert alert 
+	\end{alertblock}
+\end{frame}
+
+\end{document}

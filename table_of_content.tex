@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{tocloft}
+\usepackage{titlesec}
+
+% add dot to section
+\renewcommand\cftsecdotsep{\cftdotsep}
+\renewcommand\cftsecnumwidth{0pt}
+%\renewcommand\cftsecdotsep{\cftdot}
+%\renewcommand\cftsubsecdotsep{\cftdot}
+\renewcommand\cftsubsecnumwidth{0pt}
+\renewcommand\cftsubsubsecnumwidth{0pt}
+
+\titleformat{\section}{\Large\bfseries}{}{0pt}{\P\ \ }
+\renewcommand\thesection{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{\S\ \ }
+\renewcommand\thesubsection{}
+\titleformat{\subsubsection}{\large\bfseries}{}{0pt}{\ss\ \ }
+\renewcommand\thesubsubsection{}
+
+
+\begin{document}
+\tableofcontents
+
+\newpage
+\section{Section 1}
+\subsection{Subsection 1.1}
+blah blah blah
+\subsection{Subsection 1.2}
+
+blah blah blah
+
+blah blah blah
+
+blah blah blah
+
+blah blah blah
+
+\section{Section 2}
+blah blah blah
+\subsection{Subsection 2.1}
+blah blah blah
+\subsection{Subsection 2.2}
+
+blah blah blah
+
+blah blah blah
+
+blah blah blah
+
+blah blah blah
+
+\section{Section 3}
+blah blah blah
+\subsection{Subsection 3.1}
+blah blah blah
+\subsection{Subsection 3.2}
+
+blah blah blah
+
+blah blah blah
+
+blah blah blah
+
+blah blah blah
+\end{document}

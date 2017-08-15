@@ -1,0 +1,73 @@
+\documentclass[twocolumn]{article}
+
+\usepackage{filecontents}
+\usepackage[colorlinks, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
+
+% put your package here, if any
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN of your package
+
+% END of your package
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{filecontents}{test.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN of your bibtex 
+% remember to add a doi field if the bibtex don't have one
+
+@article{Barham:2003:XAV:1165389.945462,
+ author = {Barham, Paul and Dragovic, Boris and Fraser, Keir and Hand, Steven and Harris, Tim and Ho, Alex and Neugebauer, Rolf and Pratt, Ian and Warfield, Andrew},
+ title = {Xen and the Art of Virtualization},
+ journal = {SIGOPS Oper. Syst. Rev.},
+ issue_date = {December 2003},
+ volume = {37},
+ number = {5},
+ month = oct,
+ year = {2003},
+ issn = {0163-5980},
+ pages = {164--177},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/1165389.945462},
+ doi = {10.1145/1165389.945462},
+ acmid = {945462},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {hypervisors, paravirtualization, virtual machine monitors},
+}
+
+@book{wolf2005virtualization,
+  title={Virtualization: from the desktop to the enterprise},
+  author={Wolf, Chris and Halter, Erick M},
+  year={2005},
+  publisher={Apress}
+}
+
+% END of your bibtex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{filecontents}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN of your document
+\section{test 1}
+
+Let's first cite this\cite{wolf2005virtualization}, and then cite this\cite{Barham:2003:XAV:1165389.945462}.
+
+% END of your document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{abbrvurl}
+\bibliography{test}
+\end{document}
+
+% compile with the following commands (suppose your file name is test.tex)
+% xelatex test
+% bibtex test
+% xelatex test
+% xelatex test
+
+% A test.pdf should be generated
+
+

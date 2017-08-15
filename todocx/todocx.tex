@@ -1,0 +1,43 @@
+\documentclass[UTF8]{ctexart}
+
+\usepackage{indentfirst}
+\usepackage[square, comma, sort&compress, numbers]{natbib}
+\newcommand{\ddd}{\mathcal{D}}
+\newcommand{\blank}{\ \ \ \  }
+\newcommand{\tb}{\blank\blank}
+
+\title{利用pandoc将\LaTeX 生成docx}
+\author {朱生龙}
+
+\begin{document}
+\maketitle
+
+\textbf{摘\blank 要}
+
+\textbf{关键词}
+
+\section{引言}
+自从有了pandoc，妈妈再也不用担心我不会用word了。
+
+\section{第1章}
+
+测试两个参考文献，参考文献\citep{Ruppert95adelaunay}和\citep{chew1989guaranteed, chew1993guaranteed}。很可惜，多个参考文献不能放到同一个括号里。注意，如果使用``$\backslash$cite{...}"，生成的ref前面会加一个Reference.
+
+\subsection{1.1}
+\subsection{1.2}
+
+\section{第2章}
+\subsection{2.1}
+\subsubsection{2.1.1}
+\subsubsection{2.1.2}
+
+\section{总结}
+
+%======================================
+%			bib
+%======================================
+\section{参考文献}
+\bibliographystyle{plain}
+\bibliography{./todocx}
+
+\end{document}

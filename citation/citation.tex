@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\title{How to Generate References}
+\author{Loon Shenglong Zhu}
+
+\begin{document}
+\maketitle
+
+
+Here I'll cite~\cite{fortune1987sweepline}. 
+
+And here I'll cite~\cite{shamos1975closest, de2000computational, chew1989guaranteed}
+
+The order of the generated references are not clear to me at present.
+
+
+You can edit your ``.bib" file by searching in Google Scholar the corresponding paper, and click ``cite", then you'll find a BibTex. Copy the content in it to the ``.bib" file will suffice.
+f
+For the compiling, you should follow the steps bellow:
+\begin{enumerate}
+\item pdflatex citation
+\item bibtex citation
+\item pdflatex citation
+\item pdflatex citation
+\end{enumerate}
+
+\bibliographystyle{plain} % the `plain` defines the style of the References
+\bibliography{citation} % this will look for citation.bib in the current directory. You can change directory as you wish
+
+\end{document}
