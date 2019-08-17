@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\newcommand{\setdetail}[2]{\expandafter\def\csname loondetail@#1\endcsname{#2}}
+%\newcommand{\getdetail}[1]{\csname loondetail@#1\endcsname}
+\newcommand{\getdetail}[1]{\ignorespaces}
+
+\setdetail{hello}{world
+
+\begin{center}
+I am in the center
+\end{center}
+lol, so this scheme works perfectly.}
+\setdetail{I am lol}{
+I am the real lol
+}
+
+\begin{document}
+
+text above
+
+\getdetail{hello}
+
+text below
+
+text left \getdetail{I-am-lol} text right.
+
+text left text right.
+
+\end{document}
